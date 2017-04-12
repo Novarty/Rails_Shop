@@ -26,8 +26,16 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
-
+#gem 'listen', '~> 3.1.5'
 
 group :development, :test do
+  gem 'factory_girl_rails'
   gem 'rspec-rails','~> 3.5'
+end
+
+group :development do
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
