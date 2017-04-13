@@ -1,0 +1,12 @@
+.row
+  .medium-12.columns
+  - @products.each do |product|
+    .product-short-desc
+           .title
+             = link_to product.title, product
+           .description
+             = product.description
+           .price
+              ="#{product.price}$"
+           .amount
+             = "На складе: #{product.amount}шт."

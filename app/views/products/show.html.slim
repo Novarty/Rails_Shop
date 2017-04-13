@@ -1,0 +1,13 @@
+.row
+  .medium-8.medium-centered.columns
+    .product-full-desc
+      .title
+        = link_to @product.title, @product
+      .description
+        = @product.description
+      .price
+        = @product.price
+      .actions
+        = link_to "КУПИТЬ", "", class: "button"
+      .amount
+        = @product.amount
